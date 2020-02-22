@@ -10,7 +10,8 @@ attr_accessor :emails
   end
 
   def parse
-    emails = emails.split(", ").uniq
+    emails = emails.split(", ").unique
+    emails
   end
 
 
